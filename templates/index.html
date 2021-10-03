@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Main page</title>
+    </head>
+    <body>
+        {% if visited > 0 %}
+        <h2>Why are you still here? {{ visited }} times already.</h2>
+        {% else %}
+        <h2>This is your first time here!</h2>
+        {% endif %}
+        {% if username == None %}
+        <h2>You are not logged in</h2>
+        {% else %}
+        <h2>Logged in as {{ username }}</h2>
+        {% endif %}
+    </body>
+</html>
